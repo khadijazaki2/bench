@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 import os, sys, subprocess, getpass, json, multiprocessing, shutil, platform, warnings, datetime
-from future import print_function
 
 tmp_bench_repo = os.path.join('/', 'tmp', '.bench')
 tmp_log_folder = os.path.join('/', 'tmp', 'logs')
