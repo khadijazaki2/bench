@@ -33,7 +33,7 @@ def setup_log_stream(args):
 			os.makedirs(tmp_log_folder)
 		log_stream = open(log_path, 'w')
 		log("Logs are saved under {0}".format(log_path), level=3)
-		print("Install script run at {0} on {1}\n\n".format(execution_time, execution_day), file=log_stream)
+		print("Install script run at {0} on {1}\n\n".format(execution_time, execution_day))
 
 
 def check_environment():
