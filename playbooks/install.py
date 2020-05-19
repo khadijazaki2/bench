@@ -206,19 +206,19 @@ def install_bench(args):
 	frappe_branch = 'staging'
 	erpnext_branch = 'staging'
 
-	if args.version:
-		if args.version <= 10:
-			frappe_branch = "{0}.x.x".format(args.version)
-			erpnext_branch = "{0}.x.x".format(args.version)
-		else:
-			frappe_branch = "version-{0}".format(args.version)
-			erpnext_branch = "version-{0}".format(args.version)
-	else:
-		if args.frappe_branch:
-			frappe_branch = args.frappe_branch
+	# if args.version:
+	# 	if args.version <= 10:
+	# 		frappe_branch = "{0}.x.x".format(args.version)
+	# 		erpnext_branch = "{0}.x.x".format(args.version)
+	# 	else:
+	# 		frappe_branch = "version-{0}".format(args.version)
+	# 		erpnext_branch = "version-{0}".format(args.version)
+	# else:
+	# 	if args.frappe_branch:
+	# 		frappe_branch = args.frappe_branch
 
-		if args.erpnext_branch:
-			erpnext_branch = args.erpnext_branch
+	# 	if args.erpnext_branch:
+	# 		erpnext_branch = args.erpnext_branch
 
 	extra_vars.update(frappe_branch=frappe_branch)
 	extra_vars.update(erpnext_branch=erpnext_branch)
